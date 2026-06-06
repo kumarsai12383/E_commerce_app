@@ -8,7 +8,7 @@ import OrderPage from './pages/orderPage';
 import AllProducts from './pages/Products';
 import AllOrders from './pages/orders';
 import Address from './pages/singleOrderaddress';
-import BuyAll from './pages/BuyAll';
+import BuyAll from './pages/checkOut';
 import './App.css'
 import Footer from './components/footer';
 import CartContext from './cartContext/CartContext';

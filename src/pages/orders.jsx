@@ -12,7 +12,7 @@ function AllOrders() {
     console.log(orders);
   }, []);
   return (
-    <div className="min-h-screen max-w-6xl mx-auto items-center justify-center mt-20 bg-gray-100">
+    <div className="min-h-screen max-w-6xl mx-auto items-center p-4 justify-center mt-20">
       <h2 className="text-2xl font-bold mb-4">All Orders</h2>
       <div className="space-y-4">
         {orders.map((order) => (
@@ -24,6 +24,7 @@ function AllOrders() {
                 <h3 className="text-lg font-bold">{order.title}</h3>
                 <p className="text-gray-600">Description: {order.description}</p>
                 <p className="text-gray-600">Price: ₹{order.price.toLocaleString("en-IN")}</p>
+                <p className="text-gray-600">Total: ₹{order.price * order.quantity}</p>
                 <p className="text-gray-600">Quantity: {order.quantity}</p>
                 <span className="text-gray-600">Order Date: {new Date().toLocaleDateString()}</span>
            </div>

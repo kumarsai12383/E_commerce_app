@@ -59,7 +59,7 @@ function NavBar() {
               Sports & Fitness
             </Link>
             <Link to ="/orders" className=" flex items-center">
-              Orders
+              My Orders
             </Link>
             <Link
               className=" flex items-center p-2 w-auto bg-gradient-to-r from-blue-500 to-purple-600 rounded"
@@ -193,7 +193,7 @@ function NavBar() {
               Sports & Fitness
             </Link>
              <Link to ="/orders" className=" flex items-center">
-              Orders
+             My Orders
             </Link>
           </div>
         )}

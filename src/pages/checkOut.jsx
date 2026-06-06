@@ -12,7 +12,7 @@ function BuyAll() {
         }
     }, []);
   return (
-    <div className="min-h-screen max-w-6xl mx-auto items-center justify-center mt-20 bg-gray-100">
+    <div className="min-h-screen max-w-6xl p-4 mx-auto items-center justify-center mt-20">
       <h1 className="text-3xl font-bold mb-6">Checkout</h1>
       <div className="bg-white p-6 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold mb-4">Order Summary</h2>
