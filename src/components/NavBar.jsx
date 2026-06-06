@@ -192,6 +192,9 @@ function NavBar() {
             >
               Sports & Fitness
             </Link>
+             <Link to ="/orders" className=" flex items-center">
+              Orders
+            </Link>
           </div>
         )}
       </nav>
