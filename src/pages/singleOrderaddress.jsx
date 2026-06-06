@@ -89,7 +89,7 @@ function Address() {
 
           <div className="flex justify-end">
             <button
-              type="submit"
+              type="button"
               onClick={() => PaymentHandler()}
               className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
             >
