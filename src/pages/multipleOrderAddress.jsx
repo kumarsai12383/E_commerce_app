@@ -26,6 +26,11 @@ function MultipleOrderAddress() {
     <>
       <div className="address p-4 max-w-3xl mx-auto mt-20">
         <h2 className="text-2xl font-bold mb-4">Shipping Address</h2>
+         {showPaymentPopup && (
+          <div className="top-70 flex items-center justify-center z-50">
+            <PaymentPopUp />
+          </div>
+        )}
         <form className="space-y-4">
           <div>
             <label className="block text-gray-700">Full Name</label>
@@ -75,11 +80,7 @@ function MultipleOrderAddress() {
               className="w-full border border-gray-300 rounded px-3 py-2 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
-          {showPaymentPopup && (
-            <div className=" flex items-center justify-center z-50">
-              <PaymentPopUp />
-            </div>
-          )}
+         
           <div className="flex justify-end">
             <button
               type="button"
