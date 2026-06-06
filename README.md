@@ -133,18 +133,5 @@ Exact file list (root):
 
 - Fork the repo, create a feature branch, and open a PR with a concise description.
 
-## License
 
-- Add a license file if you want to open-source the repo (e.g., MIT). Currently none specified.
 
-## Contact / Next steps
-
-- README created and added to the project root.
-- Suggested next tasks:
-  - Add `README` badges (build, license)
-  - Create `.env.example` if API keys or endpoints need configuration
-  - Add tests and CI pipeline
-
----
-
-If you want, I can run the dev server, add a License, or commit these changes. Which should I do next?
