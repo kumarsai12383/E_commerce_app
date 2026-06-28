@@ -19,14 +19,14 @@ function Footer() {
           <div>
             <ul className="space-y-2 text-slate-400">
               <Link to="/" className="flex items-center  mb-2">
-              Home
-            </Link>
-            <Link className=" flex items-center mb-2" to="/products">
-              All Products
-            </Link>
-            <Link to="/cart" className=" flex items-center mb-2">
-              Cart
-            </Link>
+                Home
+              </Link>
+              <Link className=" flex items-center mb-2" to="/products">
+                All Products
+              </Link>
+              <Link to="/cart" className=" flex items-center mb-2">
+                Cart
+              </Link>
             </ul>
           </div>
 
@@ -36,29 +36,29 @@ function Footer() {
 
             <ul className="space-y-2 text-slate-400">
               <Link
-              className=" flex items-center mb-2"
-              to="/Category/Electronics"
-            >
-              Electronics
-            </Link>
-            <Link className=" flex items-center mb-2" to="/Category/Fashion">
-              Fashion
-            </Link>
-            <Link className=" flex items-center mb-2" to="/Category/Footwear">
-              Footwear
-            </Link>
-            <Link
-              className=" flex items-center mb-2"
-              to="/Category/Home%20%26%20Kitchen"
-            >
-              Home & Kitchen
-            </Link>
-            <Link
-              className=" flex items-center mb-2"
-              to="/Category/Sports%20%26%20Fitness"
-            >
-              Sports & Fitness
-            </Link>
+                className=" flex items-center mb-2"
+                to="/Category/Electronics"
+              >
+                Electronics
+              </Link>
+              <Link className=" flex items-center mb-2" to="/Category/Fashion">
+                Fashion
+              </Link>
+              <Link className=" flex items-center mb-2" to="/Category/Footwear">
+                Footwear
+              </Link>
+              <Link
+                className=" flex items-center mb-2"
+                to="/Category/Home%20%26%20Kitchen"
+              >
+                Home & Kitchen
+              </Link>
+              <Link
+                className=" flex items-center mb-2"
+                to="/Category/Sports%20%26%20Fitness"
+              >
+                Sports & Fitness
+              </Link>
             </ul>
           </div>
 
@@ -75,7 +75,58 @@ function Footer() {
         </div>
 
         <div className="border-t border-slate-700 mt-10 pt-6 text-center text-slate-500">
-          © 2026 ShopSphere. Built with React & Tailwind CSS.
+          © 2026 E.Com. Built with {" "}
+          <a
+            href="https://codelabs-by-kumarsai.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <em>
+              <span
+                style={{
+                  fontSize: "larger",
+                  fontWeight: "bolder",
+                  marginRight: "5px",
+                  color: "#dc3545",
+                }}
+              >
+                {"{"}
+              </span>
+              <span
+                className="brand-name-1"
+                style={{
+                  fontSize: "larger",
+                  fontWeight: "bolder",
+                  color: "#ffffff",
+                }}
+              >
+                Code
+              </span>
+              <span
+                className="brand-name-2 text-danger"
+                style={{
+                  color: "#dc3545",
+                  fontSize: "larger",
+                  fontWeight: "bolder",
+                  textDecoration: "underline",
+                  textDecorationColor: "#dc3545",
+                  textUnderlineOffset: "3px",
+                }}
+              >
+                Labs
+              </span>
+              <span
+                style={{
+                  fontSize: "larger",
+                  fontWeight: "bolder",
+                  marginLeft: "5px",
+                  color: "#dc3545",
+                }}
+              >
+                {"}"}
+              </span>
+            </em>
+          </a>
         </div>
       </div>
     </footer>
