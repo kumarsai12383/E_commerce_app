@@ -6,6 +6,7 @@ import Loading from "../components/loader";
 import { useContext } from "react";
 import CartContext from "../cartContext/CartContext";
 function ProductDetails() {
+  
   const { producttitle } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -26,8 +27,10 @@ console.log(cart);
   useEffect(() => {
     const fetchProduct = async () => {
       const products = await GetProducts();
-      const foundProduct = products.find((p) => p.title == producttitle);
+      const foundProduct = products.find((p) => p.name == producttitle);
+      window.scrollTo(0, 0);
       setProduct(foundProduct);
+      console.log(foundProduct);
       setLoading(false);
     };
     fetchProduct();
@@ -53,7 +56,7 @@ console.log(cart);
             <div className="w-full h-auto mb-0 flex items-center justify-center">
               <img
                 src={product.image}
-                alt={product.title}
+                alt={product.name}
                 className="w-auto h-auto object-cover"
               />
             </div>
@@ -61,7 +64,7 @@ console.log(cart);
               <div>
                 <div className="flex items-center justify-between space-x-4 h-16">
                   <h3 className="product-title text-2xl font-bold mt-4">
-                    {product.title}
+                    {product.name}
                   </h3>
                   <p className="product-rating text-lg font-semibold">
                     4.8 <span className="text-yellow-500">★★★★★</span>

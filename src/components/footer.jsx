@@ -35,30 +35,34 @@ function Footer() {
             <h3 className="font-semibold mb-4">Categories</h3>
 
             <ul className="space-y-2 text-slate-400">
-              <Link
-                className=" flex items-center mb-2"
-                to="/Category/Electronics"
-              >
-                Electronics
-              </Link>
-              <Link className=" flex items-center mb-2" to="/Category/Fashion">
-                Fashion
-              </Link>
-              <Link className=" flex items-center mb-2" to="/Category/Footwear">
-                Footwear
-              </Link>
-              <Link
-                className=" flex items-center mb-2"
-                to="/Category/Home%20%26%20Kitchen"
-              >
-                Home & Kitchen
-              </Link>
-              <Link
-                className=" flex items-center mb-2"
-                to="/Category/Sports%20%26%20Fitness"
-              >
-                Sports & Fitness
-              </Link>
+              
+            <Link className=" flex items-center" to="/Category/Mobiles">
+              Mobiles
+            </Link>
+            <Link className=" flex items-center" to="/Category/Laptops">
+              Laptops
+            </Link>
+            <Link className=" flex items-center" to="/Category/Audio">
+              Audio
+            </Link>
+            <Link
+              className=" flex items-center"
+              to="/Category/Cameras"
+            >
+              Cameras
+            </Link>
+            <Link
+              className=" flex items-center"
+              to="/Category/Shoes"
+            >
+              Shoes
+            </Link>
+            <Link
+              className=" flex items-center"
+              to="/Category/TV"
+            >
+              TV
+            </Link>
             </ul>
           </div>
 

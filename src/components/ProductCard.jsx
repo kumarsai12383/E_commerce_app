@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 
 function ProductCard() {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState();
   const [loading, setLoading] = useState(true);
  
   const [search, setSearch] = useState("");
@@ -14,6 +14,7 @@ function ProductCard() {
     const fetchProducts = async () => {
       const productData = await FetchProducts();
       setProducts(productData);
+      console.log(productData);
       setLoading(false);
     };
 
@@ -36,7 +37,7 @@ function ProductCard() {
             setSearch(e.target.value);
             setFilteredProducts(
               products.filter((p) =>
-                p.title.toLowerCase().includes(search.toLowerCase()),
+                p.name.toLowerCase().includes(search.toLowerCase()),
               ),
             );
           }}
@@ -47,13 +48,13 @@ function ProductCard() {
         {filteredProducts.length > 0 ? (
           productsToShow.length > 0 ? (
             productsToShow.map((product) => (
-              <div key={product.id} className="product-card p-4 flex flex-col h-full justify-between rounded shadow hover:scale-101 transition duration-300">
+              <div key={product.product_id} className="product-card p-4 flex flex-col h-full justify-between rounded shadow hover:scale-101 transition duration-300">
                 <div className="w-full h-48 flex items-center justify-center">
-                <img src={product.image} alt={product.title} className = "w-auto h-full object-cover"/>
+                <img src={product.image} alt={product.name} className = "w-auto h-full object-cover"/>
               </div>
               
               <h3 className="product-title text-lg font-bold mt-2">
-                {product.title}
+                {product.name}
               </h3>
               <p className="product-description text-gray-600 mt-5 mb-5">
                 {product.description}
@@ -63,7 +64,7 @@ function ProductCard() {
                 ₹ {product.price.toLocaleString("en-IN")}
               </p>
               <Link
-                to={`/product/${product.title}`}
+                to={`/product/${product.name}`}
                 className="btn btn-primary mt-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-1 px-4 rounded"
               >
                 View Details
@@ -76,13 +77,13 @@ function ProductCard() {
           )
         ) : (
           products.map((product) => (
-            <div key={product.id} className="product-card p-4 rounded shadow hover:scale-101 transition duration-300 flex flex-col h-full">
+            <div key={product.product_id} className="product-card p-4 rounded shadow hover:scale-101 transition duration-300 flex flex-col h-full">
               <div className="w-full h-48 flex items-center justify-center">
-                <img src={product.image} alt={product.title} className = "w-auto h-full object-cover"/>
+                <img src={product.image} alt={product.name} className = "w-auto h-full object-cover"/>
               </div>
               
               <h3 className="product-title text-lg font-bold mt-2">
-                {product.title}
+                {product.name}
               </h3>
               <p className="product-description text-gray-600 mt-5 mb-5">
                 {product.description}
@@ -92,7 +93,7 @@ function ProductCard() {
                 ₹ {product.price.toLocaleString("en-IN")}
               </p>
               <Link
-                to={`/product/${product.title}`}
+                to={`/product/${product.name}`}
                 className="btn btn-primary mt-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-1 px-4 rounded"
               >
                 View Details

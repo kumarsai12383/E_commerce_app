@@ -26,7 +26,7 @@ function BuyAll() {
                   className="w-20 h-20 object-cover rounded mr-4"
                 />
                 <div>
-                  <h3 className="text-lg font-bold">{item.title}</h3>
+                  <h3 className="text-lg font-bold">{item.name}</h3>
                   <p className="text-gray-600">Quantity: {item.quantity}</p>
                   <p className="text-gray-600">Description: {item.description}</p>
                   <p className="text-gray-600">

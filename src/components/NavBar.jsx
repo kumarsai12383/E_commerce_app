@@ -37,26 +37,32 @@ function NavBar() {
             <Link className=" flex items-center" to="/products">
               All Products
             </Link>
-            <Link className=" flex items-center" to="/Category/Electronics">
-              Electronics
+            <Link className=" flex items-center" to="/Category/Mobiles">
+              Mobiles
             </Link>
-            <Link className=" flex items-center" to="/Category/Fashion">
-              Fashion
+            <Link className=" flex items-center" to="/Category/Laptops">
+              Laptops
             </Link>
-            <Link className=" flex items-center" to="/Category/Footwear">
-              Footwear
-            </Link>
-            <Link
-              className=" flex items-center"
-              to="/Category/Home%20%26%20Kitchen"
-            >
-              Home & Kitchen
+            <Link className=" flex items-center" to="/Category/Audio">
+              Audio
             </Link>
             <Link
               className=" flex items-center"
-              to="/Category/Sports%20%26%20Fitness"
+              to="/Category/Cameras"
             >
-              Sports & Fitness
+              Cameras
+            </Link>
+            <Link
+              className=" flex items-center"
+              to="/Category/Shoes"
+            >
+              Shoes
+            </Link>
+            <Link
+              className=" flex items-center"
+              to="/Category/TV"
+            >
+              TV
             </Link>
             <Link to ="/orders" className=" flex items-center">
               My Orders
