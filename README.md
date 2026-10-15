@@ -98,7 +98,7 @@ Exact file list (root):
 
 ## State Management
 
-- `CartContext` (in `src/cartContext/CartContext.jsx`) stores the cart array and setter and is provided at the app root.
+- `CartContext` (in `src/cartContext/CartContext.jsx`) stores the cart array and setter and is provided at the app root .
 - `OrderContext` (in `src/cartContext/orderContext.jsx`) stores orders and setter.
 - `App.jsx` wires both providers and passes `cart`/`orders` state using `useState`.
 
