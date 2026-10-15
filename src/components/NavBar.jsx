@@ -168,35 +168,38 @@ function NavBar() {
         </div>
         {isMenuOpen && (
           <div className="block p-2 space-x-6 glassy rounded-lg text-white">
-            <Link to="/" className="flex items-center  mb-2">
+            <Link to="/" className="flex items-center">
               Home
             </Link>
-            <Link className=" flex items-center mb-2" to="/products">
+            <Link className=" flex items-center" to="/products">
               All Products
             </Link>
-            <Link
-              className=" flex items-center mb-2"
-              to="/Category/Electronics"
-            >
-              Electronics
+            <Link className=" flex items-center" to="/Category/Mobiles">
+              Mobiles
             </Link>
-            <Link className=" flex items-center mb-2" to="/Category/Fashion">
-              Fashion
+            <Link className=" flex items-center" to="/Category/Laptops">
+              Laptops
             </Link>
-            <Link className=" flex items-center mb-2" to="/Category/Footwear">
-              Footwear
+            <Link className=" flex items-center" to="/Category/Audio">
+              Audio
             </Link>
             <Link
-              className=" flex items-center mb-2"
-              to="/Category/Home%20%26%20Kitchen"
+              className=" flex items-center"
+              to="/Category/Cameras"
             >
-              Home & Kitchen
+              Cameras
             </Link>
             <Link
-              className=" flex items-center mb-2"
-              to="/Category/Sports%20%26%20Fitness"
+              className=" flex items-center"
+              to="/Category/Shoes"
             >
-              Sports & Fitness
+              Shoes
+            </Link>
+            <Link
+              className=" flex items-center"
+              to="/Category/TV"
+            >
+              TV
             </Link>
              <Link to ="/orders" className=" flex items-center">
              My Orders
