@@ -106,7 +106,7 @@ Exact file list (root):
 
 - `src/api.js` exposes `FetchProducts()` which fetches product data from:
 
-  `https://e-commerce-data-gf9q.onrender.com/products`
+  `https://ecombackend-c4gwf8b4bnbsgrga.centralindia-01.azurewebsites.net/api/products`
 
   It returns an array of product objects or an empty array on error.
 
