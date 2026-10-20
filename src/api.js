@@ -7,7 +7,9 @@ async function FetchProducts(){
     }
     catch(error){
         console.error('Error fetching products:', error);
+         console.log('Error fetching products:', error);
         return [];
+       
     }
 }
 
